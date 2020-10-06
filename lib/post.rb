@@ -19,6 +19,6 @@ class Post
   end
   
   def author_name
-    
+    self.all.select { |post| post.author == self }
   end
 end
